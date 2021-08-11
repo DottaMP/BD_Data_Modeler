@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2A8925E-F133-BD26-1325-8FCCBCB7FC92" name="T_SIP_PROJETO">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<generatorID>99573EEC-8A2A-232D-35C5-AD85C4344BBD</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_projeto" id="ED3FAE59-42D0-9D2F-8E2D-1CA66D7814BA">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[RN19 – Um projeto é identificado por um código numérico de cinco dígitos.]]></commentInRDBMS>
+<generatorID>0D1B7EAB-4867-E594-5905-EE9DCF92F577</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_projeto" id="578D4F6A-57A2-FF32-08A0-0B6B2438501E">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[EXEMPLOS:
+PROJETO ABC
+PROJETO DE BANCO DE DADOS 
+PROJETO DE TESTES DE SOFTWARE]]></commentInRDBMS>
+<generatorID>6B054500-5D26-AC56-FF98-104A559078F0</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_inicio" id="28D1A86F-1AD8-B684-58DC-66287BBC86AC">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<generatorID>1B3CDA83-C3C7-DE51-D829-8A6FE906CC87</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_termino" id="8F87A176-B4BD-5957-BA7E-36C40CEEB774">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<generatorID>0B18E0B1-D567-C5BA-DF39-F0452C8673FA</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="383DDB6D-2838-951C-7E80-05191DE8C0DA" name="PK_SIP_PROJETO">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<generatorID>6540C021-2E71-3BAA-1A86-5DADC7D6CF03</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED3FAE59-42D0-9D2F-8E2D-1CA66D7814BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="208A2948-DE9D-C08D-C590-8C2305284E2A" name="UN_SIP_PROJETO_NOME">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 22:46:34 UTC</createdTime>
+<notes><![CDATA[RN23 – Não existem projetos com nomes repetidos.]]></notes>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="578D4F6A-57A2-FF32-08A0-0B6B2438501E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SIP_PROJETO_DATA" directorySegmentName="seg_0" id="C5640A56-5BA0-AF0A-CB9D-7D5EB6038224">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 22:48:34 UTC</createdTime>
+<comment><![CDATA[RN24 – A data de término de um projeto deve ser maior que a data de início de um projeto.]]></comment>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<rule><![CDATA[DT_TERMINO > DT_INICIO]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

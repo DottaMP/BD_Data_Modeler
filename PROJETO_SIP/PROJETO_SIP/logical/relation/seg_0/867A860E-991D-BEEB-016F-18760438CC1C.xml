@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="IMPLANTAR" directorySegmentName="seg_0" id="867A860E-991D-BEEB-016F-18760438CC1C">
+<createdBy>mayar</createdBy>
+<createdTime>2021-04-28 22:43:00 UTC</createdTime>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<sourcePk>6540C021-2E71-3BAA-1A86-5DADC7D6CF03</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>99573EEC-8A2A-232D-35C5-AD85C4344BBD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4F622450-CFEE-65EC-C0E6-F75A9C404D19</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

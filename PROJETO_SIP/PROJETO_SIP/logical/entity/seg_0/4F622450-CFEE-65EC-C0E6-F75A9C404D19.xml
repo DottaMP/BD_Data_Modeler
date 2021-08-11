@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4F622450-CFEE-65EC-C0E6-F75A9C404D19" name="T_SIP_IMPLANTACAO">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 01:06:20 UTC</createdTime>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_projeto" id="EB8A75E2-3786-18C4-70F9-6803E3530581">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-05 23:09:03 UTC</createdTime>
+<generatorID>867A860E-991D-BEEB-016F-18760438CC1C</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<referedAttribute>0D1B7EAB-4867-E594-5905-EE9DCF92F577</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_implantacao" id="911FEE6C-7B5B-67C6-8127-248BFA569302">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 01:06:38 UTC</createdTime>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_matricula" id="052254F9-461B-C025-280C-DC4E6FC706A3">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-05 22:42:47 UTC</createdTime>
+<generatorID>4CF03E5B-AAEA-822E-C609-813618CACE9C</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<referedAttribute>EAD6E82A-338C-E826-A3D8-D35703ACB147</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_entrada" id="FF0D3E57-C08A-598D-56A7-768FB342FB98">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 01:06:45 UTC</createdTime>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_saida" id="B2F8A24B-CC30-6F77-E15B-0542C8A78C4C">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 01:06:52 UTC</createdTime>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B95ED8E6-2260-6CF8-D3E0-FD7D89489460" name="T_SIP_IMPLANTACAO PK">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 01:06:40 UTC</createdTime>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>911FEE6C-7B5B-67C6-8127-248BFA569302</attributeRef>
+<attributeRef>EB8A75E2-3786-18C4-70F9-6803E3530581</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

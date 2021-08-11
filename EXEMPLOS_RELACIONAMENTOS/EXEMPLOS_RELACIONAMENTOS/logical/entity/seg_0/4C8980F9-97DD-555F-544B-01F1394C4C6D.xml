@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4C8980F9-97DD-555F-544B-01F1394C4C6D" name="T_GERENTE">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-25 00:06:07 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_gerente" id="7EDBFE16-16AE-2BE4-9B48-DF63FD26B158">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-25 00:08:52 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_depto" id="7E893750-47AF-14E2-AD6B-2E6337FD80E1">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-25 00:11:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[UID DA RELAÇÃO: IDENTIFICADOR UNICO DA RELAÇÃO = CHAVE ESTRANGEIRA / FOREIGN KEY]]></commentInRDBMS>
+<generatorID>F11CA8B4-D64C-EB98-C139-E3D039280658</generatorID>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<referedAttribute>C333E27B-EC46-66DC-1EF3-34220B9E4646</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_gerente" id="B78E1412-721F-C54F-10EE-5C3894878D88">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-25 00:09:01 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_email" id="52B16CF9-7E56-B792-B0EB-3D86647D2480">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-25 00:09:08 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3B349001-C310-F94A-34E6-6B2403457DFC" name="T_GERENTE PK">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-25 00:09:00 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7EDBFE16-16AE-2BE4-9B48-DF63FD26B158</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

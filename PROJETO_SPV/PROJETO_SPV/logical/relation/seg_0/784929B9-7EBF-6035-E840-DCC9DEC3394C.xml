@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CLASSIFICAR" directorySegmentName="seg_0" id="784929B9-7EBF-6035-E840-DCC9DEC3394C">
+<createdBy>mayar</createdBy>
+<createdTime>2021-04-29 00:24:58 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<sourcePk>9DE6E9FC-C6C3-9020-F0E6-88FB5CF2E187</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D9DA8FDE-C367-9673-1C4E-0B09982BEC65</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>796EBDC3-20FE-B32C-9BA2-12B205BC8E03</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7770B1E4-6B9B-EC1E-AE47-1B2780CF3754" name="T_SPV_UNID_CML">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>68224A33-5A15-E19D-CD5D-1559DD72DC07</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_unid_cml" id="9F8C4C0D-CE8D-43C1-7DF2-7E5AC43ED5BA">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>A1B9A39A-024E-2CF0-9FAA-9EC3A7B1258F</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sg_unid_cml" id="0C371630-6A49-EDF7-AAE9-9E8DC61C4C6D">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>02A0EC62-5730-18D8-2840-2D4D9CA8E96D</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_unid_cml" id="C5043137-4A18-D023-56F7-8E640CD524A4">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>0ADA9256-153B-6215-7B4D-101C1DCE93B6</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="307BCEBF-9E68-3833-1C1D-BF5BFF667DCF" name="PK_SPV_UNID_CML">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>3A50A57F-286E-3D1B-5602-C79368939F06</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F8C4C0D-CE8D-43C1-7DF2-7E5AC43ED5BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="072CD6D4-F5D0-8E09-AC8C-6EEBABC34B81" name="UN_SPV_UNIDCML_DESC">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-13 00:31:09 UTC</createdTime>
+<comment><![CDATA[RN20 – Natureza da operação, descrição da unidade de medida, descrição de um produto são informações que não se repetem dentro do nosso cadastro.]]></comment>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5043137-4A18-D023-56F7-8E640CD524A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

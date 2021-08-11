@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="971DEE31-E92A-42A8-667E-AC76BA356959" name="T_SPV_CLIENTE">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>18CEA3BB-60D9-D50F-A662-1CDE9873626A</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="B30A74B4-CB00-CEF3-A6E9-3E2A247A2DDF">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>B4CAA9BF-B4D0-4F65-4BF0-8676855E69B0</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_cliente" id="0B134886-5739-9C03-D748-EDD477AE1E37">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>F3944701-E71D-F01E-2139-491C719692D7</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_nascimento" id="97ADC54A-AE80-E9D4-C875-909062B82E33">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>03E1ECC6-EF83-E011-B1D8-C68E80495BDA</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_genero" id="F2C01238-2CC6-35C4-1948-AAB84921BDA8">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>090F4C4E-00B7-1B5F-337D-DF94483E1EEC</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_cpf" id="FF0B685A-93F8-8B9E-45C5-3A82E3553D4D">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>2F3521FC-575E-ECCA-FB61-B38822CBA0D5</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_cpf_digito" id="D7A34883-C6BF-3041-5CC6-6EA06D5CB1C9">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>EF9C09EE-2602-441B-06FA-F6D1816CF5BF</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_rg" id="F3BB6D85-B325-111F-7FF0-381A0A49FF5A">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>887192CE-230C-584E-5338-CEBBA3E78977</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_rg_digito" id="70815B6D-1A2F-58DD-C9EA-9B0324AE690F">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>A28A4281-1706-D337-8275-17F5D426A7D6</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_endereco" id="BCCF81EE-EA34-A079-ED33-8E0F5362B81F">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>FF599351-A703-98AE-4CEF-657C56608BD5</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_telefone" id="F30E42BA-4326-8D71-D381-33F3294572D4">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>4E150B37-279F-BF6E-4A8A-D329FE2BAE4A</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_email" id="7AF5273D-32BC-A7A0-A051-85D21C041245">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>E6D18E41-E40D-5527-D9E6-542DDE058966</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D66DFD0-E8DE-FBD2-DF22-AB082AAA1343" name="PK_SPV_CLIENTE">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>9552F805-4A20-9F34-8CDB-2277BDE2A700</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B30A74B4-CB00-CEF3-A6E9-3E2A247A2DDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SPV_CLIENTE_GENERO" directorySegmentName="seg_0" id="F65A7C4F-34A0-D3FE-058B-AE6CD4174C42">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-13 00:23:52 UTC</createdTime>
+<comment><![CDATA[RN05 – Os gêneros aplicados em nossos cadastros, são: Homem (H), Mulher (M) e não binário (NB).
+
+ALGUMAS FORMAS DE VALIDAÇÃO:
+
+DS_GENERO = 'H' OR DS_GENERO = 'M' OR DS_GENERO = 'NB' OR
+DS_GENERO = 'h' OR DS_GENERO = 'm' OR DS_GENERO = 'nb'
+
+UPPER() = CONVERTE PARA LETRA MAIUSCULA
+UPPER(DS_GENERO) = 'H' OR UPPER(DS_GENERO) = 'M' OR UPPER(DS_GENERO) = 'NB'
+UPPER(DS_GENERO) IN ('H', 'M', 'NB')
+
+LOWER() = CONVERTE PARA LETRA MINUSCULA
+LOWER(DS_GENERO) = 'h' OR LOWER(DS_GENERO) = 'm' OR LOWER(DS_GENERO) = 'nb'
+LOWER(DS_GENERO) IN ('h', 'm', 'nb')
+
+IN() = AVALIA UMA LISTA DE VALORES - EQUIVALE A VALIDAÇÃO: DS_GENERO = 'H' OR DS_GENERO = 'M' OR DS_GENERO = 'NB']]></comment>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<rule><![CDATA[UPPER(DS_GENERO) IN ('H', 'M', 'NB')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

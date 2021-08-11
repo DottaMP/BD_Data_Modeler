@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COMERCIALIZAR" directorySegmentName="seg_0" id="17D5978B-B161-58CC-C6A6-FBFFB2E170D8">
+<createdBy>mayar</createdBy>
+<createdTime>2021-04-08 00:47:08 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>B3625C3B-01E7-D058-986F-DF0C8A8777AC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1A535200-9E15-FC4A-B2E5-C215043696E6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

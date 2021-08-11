@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="067117BB-8525-13E8-E5AA-AD1664853688" name="T_SPV_NOTA_FISCAL">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>796EBDC3-20FE-B32C-9BA2-12B205BC8E03</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nr_nota_fiscal" id="91AB3491-EBF6-03A2-5370-88372158F961">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>4D65E13E-F6F9-7C01-CC12-C262536FECF1</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_cliente" id="4C433270-F00C-A57D-6281-ED31F9A81EDB">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>BC322B74-33D8-BAAD-A2D9-71C0A3EE04E3</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62F9A4E9-80AA-363F-40F0-BECD0863DDC4" referredColumn="B30A74B4-CB00-CEF3-A6E9-3E2A247A2DDF"/>
+</associations>
+</Column>
+<Column name="nr_cfop" id="175F0667-256D-EFED-B66E-0EE262536EBD">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>1352A440-6C0A-9F6F-B51D-C83BACFE1431</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89259833-06B5-BA20-E058-9E89CCC11EE0" referredColumn="91FCB465-7243-2AA4-7184-56F5EDC40356"/>
+</associations>
+</Column>
+<Column name="dt_emissao" id="02A9ECA5-68E4-1704-3C91-FBF0E6119BFA">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>C916E886-719E-1253-3A97-9A1B6C3418D7</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_saida" id="DA2C773A-1521-6C03-EECE-812B1BB0757F">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>0872A751-FFC6-68CF-31FE-7149A28B924D</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_total_nf" id="C69EF1FE-8186-D667-91A4-9D30B59F9B5E">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>8063FA86-FA3D-BB56-61B9-905530114807</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,9,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_desconto" id="1BB9751F-E66B-E8C4-B442-14309CD181BC">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[RN21 – O valor do desconto praticado por nossa empresa varia de 0,0% a 25,0%, nunca ultrapassando este valor. Quando nenhum desconto for praticado, deve-se armazenar ZERO.
+|1| - ESCALA = 1
+DESCONTO = 25,0
+| 3 | PRECISAO=3
+DESCONTO = 12,5%]]></commentInRDBMS>
+<generatorID>6305F22F-6841-0460-B447-E1EDD665AD69</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3037315E-0687-9FCD-78E2-CA07BA569177" name="PK_SPV_NOTA_FISCAL">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>1B2C7131-7EDE-F99C-D041-614096860A6D</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91AB3491-EBF6-03A2-5370-88372158F961"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD5F523E-0879-57AC-F6F5-228299FE0F2A" name="FK_SPV_NF_CLASSIF_FISCAL">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>784929B9-7EBF-6035-E840-DCC9DEC3394C</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="175F0667-256D-EFED-B66E-0EE262536EBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="152E3B9D-F9AC-8476-1132-9B82BD9AA07E" name="FK_SPV_NF_CLIENTE">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:51 UTC</createdTime>
+<generatorID>C256BD9B-1426-E384-9677-47CF966AD440</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C433270-F00C-A57D-6281-ED31F9A81EDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SPV_NF_DESCONTO" directorySegmentName="seg_0" id="D9C17860-0594-D41D-3D23-41A29640C048">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-13 00:34:25 UTC</createdTime>
+<comment><![CDATA[RN21 – O valor do desconto praticado por nossa empresa varia de 0,0% a 25,0%, nunca ultrapassando este valor. Quando nenhum desconto for praticado, deve-se armazenar ZERO.]]></comment>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<rule><![CDATA[VL_DESCONTO >= 0 AND VL_DESCONTO <= 25]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_SPV_NF_DATA" directorySegmentName="seg_0" id="67548C39-CF62-CD20-F9F7-B0E9B1337BBE">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-13 00:43:36 UTC</createdTime>
+<comment><![CDATA[RN36 – A data da saída da nota fiscal, deve ser maior ou igual a data da emissão da nota fiscal.]]></comment>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<rule><![CDATA[DT_SAIDA >= QTD_EMISSAO]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="41F3BE20-BDAF-A51C-E456-CDF6EA112894" containerWithKeyObject="C755EE2F-CF32-8083-6269-8F470E966360" localFKIndex="6F1DE39A-C9BA-C387-A9A9-771B238AA716" name="FK_SPV_PRODUTO_UNIDCML">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:51 UTC</createdTime>
+<generatorID>1DF1FD28-BD0A-3CD4-2351-D2DADE6C23FD</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<referredTableLongName>T_SPV_UNID_CML</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7770B1E4-6B9B-EC1E-AE47-1B2780CF3754</referredTableID>
+<keyObject>307BCEBF-9E68-3833-1C1D-BF5BFF667DCF</keyObject>
+<referredKeyID>307BCEBF-9E68-3833-1C1D-BF5BFF667DCF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_unid_cml</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

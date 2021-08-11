@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1F116246-74DE-212D-D8EA-AF9C88AA5437" name="T_FUNCIONARIO">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-25 01:06:43 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_depto" id="9784E42B-5EE8-BC9B-BA40-61AC4BCE5078">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-25 01:09:10 UTC</createdTime>
+<generatorID>D7693063-A06F-0BE3-CB87-5E82CD965633</generatorID>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<referedAttribute>7DFCF430-4186-827A-6D3D-D914CB9467B0</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_matricula" id="AB3B659C-8007-8CAB-A229-129FE10D7A45">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-25 01:06:54 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_funcionario" id="F5D28616-9F62-9836-319F-57CDAFD603F0">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-25 01:07:15 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_salario" id="A56EA942-CF75-B69F-9CC8-B32CE13D3761">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-25 01:07:39 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CEDC0B55-961A-36F4-9742-07383F602DEF" name="T_FUNCIONARIO PK">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-25 01:07:14 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AB3B659C-8007-8CAB-A229-129FE10D7A45</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

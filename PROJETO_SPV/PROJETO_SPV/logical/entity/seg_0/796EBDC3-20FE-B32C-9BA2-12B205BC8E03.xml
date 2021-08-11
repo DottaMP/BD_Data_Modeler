@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="796EBDC3-20FE-B32C-9BA2-12B205BC8E03" name="T_SPV_NOTA_FISCAL">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:34:41 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_nota_fiscal" id="4D65E13E-F6F9-7C01-CC12-C262536FECF1">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:34:51 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_cliente" id="BC322B74-33D8-BAAD-A2D9-71C0A3EE04E3">
+<createdBy>mayar</createdBy>
+<createdTime>2021-04-29 00:19:38 UTC</createdTime>
+<generatorID>C256BD9B-1426-E384-9677-47CF966AD440</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<referedAttribute>B4CAA9BF-B4D0-4F65-4BF0-8676855E69B0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_cfop" id="1352A440-6C0A-9F6F-B51D-C83BACFE1431">
+<createdBy>mayar</createdBy>
+<createdTime>2021-04-29 00:24:58 UTC</createdTime>
+<generatorID>784929B9-7EBF-6035-E840-DCC9DEC3394C</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<referedAttribute>3FFE31B2-0AB6-FBC3-EEFF-4F364DF6A318</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_emissao" id="C916E886-719E-1253-3A97-9A1B6C3418D7">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:34:53 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_saida" id="0872A751-FFC6-68CF-31FE-7149A28B924D">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:34:59 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_total_nf" id="8063FA86-FA3D-BB56-61B9-905530114807">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:35:04 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,9,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_desconto" id="6305F22F-6841-0460-B447-E1EDD665AD69">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 00:15:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[RN21 – O valor do desconto praticado por nossa empresa varia de 0,0% a 25,0%, nunca ultrapassando este valor. Quando nenhum desconto for praticado, deve-se armazenar ZERO.
+|1| - ESCALA = 1
+DESCONTO = 25,0
+| 3 | PRECISAO=3
+DESCONTO = 12,5%]]></commentInRDBMS>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1B2C7131-7EDE-F99C-D041-614096860A6D" name="T_SPV_NOTA_FISCAL PK">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:34:52 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4D65E13E-F6F9-7C01-CC12-C262536FECF1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

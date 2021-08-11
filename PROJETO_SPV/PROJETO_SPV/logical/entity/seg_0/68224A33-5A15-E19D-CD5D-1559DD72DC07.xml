@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="68224A33-5A15-E19D-CD5D-1559DD72DC07" name="T_SPV_UNID_CML">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:33:41 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_unid_cml" id="A1B9A39A-024E-2CF0-9FAA-9EC3A7B1258F">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:33:47 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sg_unid_cml" id="02A0EC62-5730-18D8-2840-2D4D9CA8E96D">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:33:55 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_unid_cml" id="0ADA9256-153B-6215-7B4D-101C1DCE93B6">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:33:59 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3A50A57F-286E-3D1B-5602-C79368939F06" name="T_SPV_UNID_CML PK">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:33:53 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A1B9A39A-024E-2CF0-9FAA-9EC3A7B1258F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F5B043AC-E3AE-E708-1535-A99CA5FB7BC1" name="T_DEPENDENTE">
+<createdBy>mayar</createdBy>
+<createdTime>2021-04-08 00:06:50 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_matricula1" id="A42B118A-A00C-679B-31A6-F1A5511FD823">
+<createdBy>mayar</createdBy>
+<createdTime>2021-04-08 00:12:02 UTC</createdTime>
+<generatorID>AA678D6E-D125-0D9B-99A5-811FFA797FE4</generatorID>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<referedAttribute>3D55C082-A4FC-05BD-6D9A-4EBF81BF8FA5</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_dependente" id="B06CFC93-8604-1987-C925-60FBC0E9953B">
+<createdBy>mayar</createdBy>
+<createdTime>2021-04-08 00:07:13 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_dependente" id="DC07A487-5CFC-B984-5FE6-0D122E1B4135">
+<createdBy>mayar</createdBy>
+<createdTime>2021-04-08 00:07:29 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_nascimento" id="3621FC95-5D62-0913-3496-16AB5E7C1E80">
+<createdBy>mayar</createdBy>
+<createdTime>2021-04-08 00:07:40 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0FA41B70-91B9-D07D-EE1B-DC2C18A7AE5D" name="T_DEPENDENTE PK">
+<createdBy>mayar</createdBy>
+<createdTime>2021-04-08 00:07:11 UTC</createdTime>
+<ownerDesignName>EXEMPLOS_RELACIONAMENTOS</ownerDesignName>
+<engineerTo>
+<item key="3CDE2179-579F-057E-253A-435861FFE68B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A42B118A-A00C-679B-31A6-F1A5511FD823</attributeRef>
+<attributeRef>B06CFC93-8604-1987-C925-60FBC0E9953B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

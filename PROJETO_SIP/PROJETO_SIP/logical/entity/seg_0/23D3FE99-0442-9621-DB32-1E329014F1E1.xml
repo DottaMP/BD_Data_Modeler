@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="23D3FE99-0442-9621-DB32-1E329014F1E1" name="T_SIP_DEPENDENTE">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 01:04:24 UTC</createdTime>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_matricula" id="014C2E4C-0427-1531-F18E-77995404834F">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-05 22:42:47 UTC</createdTime>
+<generatorID>08E9662E-8BE8-67C4-FA16-450D4F260285</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<referedAttribute>EAD6E82A-338C-E826-A3D8-D35703ACB147</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_dependente" id="D3355E1D-8F82-F37B-2F44-238DB880B0EF">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 01:04:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[RN18 – Um dependente é identificado pelo código numérico de até dois dígitos e o número de matrícula do funcionário que ele depende.]]></commentInRDBMS>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_dependente" id="EBE3DF3A-B8AB-F296-75DA-9F29CA2C380E">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 01:04:47 UTC</createdTime>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_nascimento" id="F3B3D785-0D9E-FBE1-99A6-75481E81E71D">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 01:04:54 UTC</createdTime>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E7197D64-3510-FE7D-E30E-AE4400148457" name="T_SIP_DEPENDENTE PK">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 01:04:46 UTC</createdTime>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D3355E1D-8F82-F37B-2F44-238DB880B0EF</attributeRef>
+<attributeRef>014C2E4C-0427-1531-F18E-77995404834F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

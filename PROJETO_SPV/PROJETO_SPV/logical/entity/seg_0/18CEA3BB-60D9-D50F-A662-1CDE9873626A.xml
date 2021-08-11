@@ -1,0 +1,178 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="18CEA3BB-60D9-D50F-A662-1CDE9873626A" name="T_SPV_CLIENTE">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:28:16 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cliente" id="B4CAA9BF-B4D0-4F65-4BF0-8676855E69B0">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:28:37 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_cliente" id="F3944701-E71D-F01E-2139-491C719692D7">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:29:26 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_nascimento" id="03E1ECC6-EF83-E011-B1D8-C68E80495BDA">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:30:20 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_genero" id="090F4C4E-00B7-1B5F-337D-DF94483E1EEC">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:30:14 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_cpf" id="2F3521FC-575E-ECCA-FB61-B38822CBA0D5">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:29:42 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_cpf_digito" id="EF9C09EE-2602-441B-06FA-F6D1816CF5BF">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:29:58 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_rg" id="887192CE-230C-584E-5338-CEBBA3E78977">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:30:03 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_rg_digito" id="A28A4281-1706-D337-8275-17F5D426A7D6">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:30:09 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_endereco" id="FF599351-A703-98AE-4CEF-657C56608BD5">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:30:51 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_telefone" id="4E150B37-279F-BF6E-4A8A-D329FE2BAE4A">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:30:57 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_email" id="E6D18E41-E40D-5527-D9E6-542DDE058966">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:31:03 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9552F805-4A20-9F34-8CDB-2277BDE2A700" name="T_SPV_CLIENTE PK">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-18 00:28:47 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B4CAA9BF-B4D0-4F65-4BF0-8676855E69B0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

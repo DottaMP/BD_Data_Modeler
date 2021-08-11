@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AEA8929D-CF06-2291-E895-D4130F5AE790" name="T_SPV_CLASSIF_FISCAL">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>D9DA8FDE-C367-9673-1C4E-0B09982BEC65</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nr_cfop" id="91FCB465-7243-2AA4-7184-56F5EDC40356">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>3FFE31B2-0AB6-FBC3-EEFF-4F364DF6A318</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_tipo_operacao" id="B38F5A24-2E5C-18A8-E1BE-A1BF6073B28B">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 - ENTRADA
+2 - SAIDA]]></commentInRDBMS>
+<generatorID>27C0528A-3DDD-30B0-0135-287BF4F6DBD1</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_natureza_operacao" id="AB4B4B15-AA96-3B6F-BE27-AD45460CEF13">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>3E76A014-F31E-0E4E-0F0B-4D81E8E291E8</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_natureza_operacao" id="669F3CCE-FBBD-D81B-270E-FB7D41538B68">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>1C439AAE-25C0-5C4B-929A-9D5D1A23022A</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3C2EAFAD-F4ED-E8A5-3297-8A68DD06A065" name="PK_SPV_CLASSIF_FISCAL">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>9DE6E9FC-C6C3-9020-F0E6-88FB5CF2E187</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91FCB465-7243-2AA4-7184-56F5EDC40356"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76A18B6D-7D63-FB86-FA80-2AE80D2B68F3" name="UN_SPV_CLFISCAL_NOME">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-13 00:29:01 UTC</createdTime>
+<comment><![CDATA[RN20 – Natureza da operação, descrição da unidade de medida, descrição de um produto são informações que não se repetem dentro do nosso cadastro.]]></comment>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB4B4B15-AA96-3B6F-BE27-AD45460CEF13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SPV_CLFISCAL_TIPOOP" directorySegmentName="seg_0" id="FD8BBC5C-3DD3-C92F-084B-B55C711718E1">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-13 00:27:12 UTC</createdTime>
+<comment><![CDATA[RN13 – Uma nota fiscal deve ter um tipo: 1-entrada ou 2-saída, que se refere ao tipo de código fiscal.
+RN29 – O tipo de operação, especificado no código fiscal, deve ser 1- Entrada ou 2- Saída.
+
+TIPO NUMERIC
+DS_TIPO_OPERACAO IN (1, 2)
+
+--------------------------------------------------------------------
+
+TIPO DE DADO CHAR/VARCHAR2
+UPPER(DS_TIPO_OPERACAO) = 'ENTRADA' OR UPPER(DS_TIPO_OPERACAO) = 'SAIDA' ]]></comment>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<rule><![CDATA[DS_TIPO_OPERACAO = 1 OR DS_TIPO_OPERACAO = 2]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

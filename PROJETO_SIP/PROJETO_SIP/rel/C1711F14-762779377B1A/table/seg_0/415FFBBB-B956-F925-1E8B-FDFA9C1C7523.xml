@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="415FFBBB-B956-F925-1E8B-FDFA9C1C7523" name="T_SIP_DEPTO">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<generatorID>3F6EE87D-2841-2E4F-815B-30AABAA65883</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_depto" id="71553154-31C5-49AC-100C-1C5B6089583B">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[RN16 – Um departamento é identificado por um código numérico de três dígitos.]]></commentInRDBMS>
+<generatorID>4AC40F30-3AA1-A9E8-6330-38D583C91EE7</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_depto" id="73C4A841-91F9-BFDD-2866-287C0456661D">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[EXEMPLOS:
+FINANCEIRA
+FATURAMENTO
+CONSTAS A PAGAR
+TECNOLOGIA DA INFORMAÇÃO]]></commentInRDBMS>
+<generatorID>6E94D128-F4D0-5C2B-96BA-10138D0C2A0F</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sg_depto" id="CF0B5EBF-B051-F8A1-2B2F-294329D1498B">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departamento: São divisões de uma empresa, onde cada divisão tem um propósito. Precisamos do código numérico, nome do departamento e uma sigla com três letras para facilitar a identificação do departamento em relatórios.
+EXEMPLOS
+FIN
+FAT
+CPG
+TIC]]></commentInRDBMS>
+<generatorID>7C17ECE8-197D-C1AC-674F-E4A583BC7FAC</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47312D36-2D10-0775-E4B8-75BE964BF17C" name="PK_SIP_DEPTO">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<comment><![CDATA[PK_SIP_DEPTO
+PK = CHAVE PRIMARIA
+SIP = PROJETO
+DEPTO = TABELA]]></comment>
+<generatorID>28073155-EF8C-AA22-1464-72A15FEBCDA9</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71553154-31C5-49AC-100C-1C5B6089583B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1EE8880-B58B-6485-B05A-240FFAA20D98" name="UN_SIP_DEPTO_NOME">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:18:50 UTC</createdTime>
+<comment><![CDATA[RN21 – Não existem nomes de departamentos repetidos.
+
+UN_SIP_DEPTO_NOME
+UN = UNIQUE
+SIP = PROJETO
+DEPTO = TABELA
+NOME = CAMPO]]></comment>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73C4A841-91F9-BFDD-2866-287C0456661D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

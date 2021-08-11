@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3F6EE87D-2841-2E4F-815B-30AABAA65883" name="T_SIP_DEPTO">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 00:42:36 UTC</createdTime>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_depto" id="4AC40F30-3AA1-A9E8-6330-38D583C91EE7">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 00:44:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[RN16 – Um departamento é identificado por um código numérico de três dígitos.]]></commentInRDBMS>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_depto" id="6E94D128-F4D0-5C2B-96BA-10138D0C2A0F">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 00:45:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[EXEMPLOS:
+FINANCEIRA
+FATURAMENTO
+CONSTAS A PAGAR
+TECNOLOGIA DA INFORMAÇÃO]]></commentInRDBMS>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sg_depto" id="7C17ECE8-197D-C1AC-674F-E4A583BC7FAC">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 00:45:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departamento: São divisões de uma empresa, onde cada divisão tem um propósito. Precisamos do código numérico, nome do departamento e uma sigla com três letras para facilitar a identificação do departamento em relatórios.
+EXEMPLOS
+FIN
+FAT
+CPG
+TIC]]></commentInRDBMS>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="28073155-EF8C-AA22-1464-72A15FEBCDA9" name="T_SIP_DEPTO PK">
+<createdBy>mayar</createdBy>
+<createdTime>2021-03-11 00:45:19 UTC</createdTime>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4AC40F30-3AA1-A9E8-6330-38D583C91EE7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

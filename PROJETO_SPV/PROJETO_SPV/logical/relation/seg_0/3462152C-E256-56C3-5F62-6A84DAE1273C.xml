@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COMERCIALIZAR" directorySegmentName="seg_0" id="3462152C-E256-56C3-5F62-6A84DAE1273C">
+<createdBy>mayar</createdBy>
+<createdTime>2021-04-29 00:36:13 UTC</createdTime>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<engineerTo>
+<item key="52ADD6D9-1F1B-0A46-D91A-D89748962D38" value="true"/>
+</engineerTo>
+<sourcePk>1B2C7131-7EDE-F99C-D041-614096860A6D</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>796EBDC3-20FE-B32C-9BA2-12B205BC8E03</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>96D4363A-AB1C-1E46-BA60-569D788728FF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

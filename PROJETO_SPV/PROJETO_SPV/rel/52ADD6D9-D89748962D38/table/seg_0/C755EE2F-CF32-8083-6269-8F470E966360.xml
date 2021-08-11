@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C755EE2F-CF32-8083-6269-8F470E966360" name="T_SPV_PRODUTO">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>1DCE5D66-FC74-1C1A-0E7F-76A44973E5BB</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_produto" id="549F9DF2-8EC7-EFC2-067F-645BA8A2DE03">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>723168CF-33B2-E91F-525D-F5C85C85E7BD</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_unid_cml" id="BFEE3479-67A0-39DF-CB28-4E060122B485">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>A4D30F35-0DD9-C51E-C3D6-531C05098F0E</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="41F3BE20-BDAF-A51C-E456-CDF6EA112894" referredColumn="9F8C4C0D-CE8D-43C1-7DF2-7E5AC43ED5BA"/>
+</associations>
+</Column>
+<Column name="ds_produto" id="66266E07-6855-FF43-F376-F7C73171772B">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>BC418C9C-6DED-0DF6-AE5B-1A51456062EA</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_produto_completa" id="3831E128-587D-4D6F-70AE-BE47B412F297">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>1ED74802-E1DD-F510-6852-7E6DD002CE4B</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qt_estoque" id="16E1D312-F492-B4E6-A5F9-6A79238DB3A9">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>14D64D1F-693E-7D9C-BD70-02891758D563</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_preco_unit" id="8CE1DBC9-60C2-2175-1248-D081B26F16EE">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>31BFC399-454D-892F-DDF5-E918F20479CF</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C55A988F-87AC-28D3-9AE7-AB3B112506A2" name="PK_SPV_PRODUTO">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>D04963D7-47BF-6AB7-1BE1-ACC2FB26BCA7</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="549F9DF2-8EC7-EFC2-067F-645BA8A2DE03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ADA189B8-EC31-8D00-A6CA-5754E96A671B" name="UN_SPV_PRODUTO_DESC">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-13 00:31:58 UTC</createdTime>
+<comment><![CDATA[RN20 – Natureza da operação, descrição da unidade de medida, descrição de um produto são informações que não se repetem dentro do nosso cadastro.]]></comment>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66266E07-6855-FF43-F376-F7C73171772B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F1DE39A-C9BA-C387-A9A9-771B238AA716" name="FK_SPV_PRODUTO_UNIDCML">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:51 UTC</createdTime>
+<generatorID>1DF1FD28-BD0A-3CD4-2351-D2DADE6C23FD</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFEE3479-67A0-39DF-CB28-4E060122B485"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SPV_PRODUTO" directorySegmentName="seg_0" id="B13C82B4-2248-8D52-30F3-D981B4A4311C">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-13 00:41:56 UTC</createdTime>
+<comment><![CDATA[RN33 – Preço unitário do produto, deve ser um número decimal maior que zero.]]></comment>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<rule><![CDATA[VL_PRECO_UNIT > 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

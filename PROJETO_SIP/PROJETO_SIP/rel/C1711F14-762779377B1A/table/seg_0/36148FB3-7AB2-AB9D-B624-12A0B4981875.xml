@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="36148FB3-7AB2-AB9D-B624-12A0B4981875" name="T_SIP_FUNCIONARIO">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<generatorID>820B9369-E654-D3D4-4961-D3C6CAD6A26D</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nr_matricula" id="D47A86E5-84FE-FBD0-E6BE-EA4993CF4550">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[RN17 – Um funcionário é identificado pelo número de matrícula, com cinco dígitos.]]></commentInRDBMS>
+<generatorID>EAD6E82A-338C-E826-A3D8-D35703ACB147</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_depto" id="D087968F-768E-D878-883E-1DACDA0F707B">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[UID = CHAVE ESTRANGEIRA]]></commentInRDBMS>
+<generatorID>BA853A85-2F3B-BA7C-6A06-6F60F7EEF418</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BECCF17B-7C1F-182B-38AC-C145F8D10196" referredColumn="71553154-31C5-49AC-100C-1C5B6089583B"/>
+</associations>
+</Column>
+<Column name="nm_funcionario" id="490B2214-371E-FF0A-C79B-B88402F665F9">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<generatorID>BEEB9229-CED7-06B9-0856-7C0899EB63B2</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_nascimento" id="DFE78221-E1BB-8158-A393-EA8A40EDB1E4">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<generatorID>1DCF2BE6-FB01-E171-624B-97560499BBF4</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_admissao" id="59C67578-0E07-3908-F145-A98F100BA9AE">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<generatorID>F1FF26C0-E4AF-308C-E210-46863FE32C71</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_endereco" id="A2F1F5A0-6894-67AC-E84F-62A99014B826">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo composto, requer decomposição para normalizar.]]></commentInRDBMS>
+<generatorID>E35CC511-4B02-0DB3-0304-445B71995495</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_salario" id="9AC2B6C5-584A-8EBE-02FB-FF141C33F61F">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[RN22 – Todos os funcionários possuem um salário acima ou igual ao salário mínimo (Em 2020, R$ 1.045,00). 
+O maior salário atualmente é de R$ 18.000,00
+99.999,99
+PRECISÃO=7
+ESCALA=2]]></commentInRDBMS>
+<generatorID>5844C5F4-ECC8-53B4-D837-185A6E504292</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A17620FA-3367-3E79-93CA-41493D6FBEC5" name="PK_SIP_FUNCIONARIO">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<generatorID>BEE63F45-4833-C277-6BA0-50B85F8CF0DB</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D47A86E5-84FE-FBD0-E6BE-EA4993CF4550"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78154227-DA03-A987-E256-279EF8250EDB" name="FK_SIP_FUNC_DEPTO_">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-06 01:06:11 UTC</createdTime>
+<generatorID>B784D6ED-6AE1-63B6-2E51-31DED90B5D0C</generatorID>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D087968F-768E-D878-883E-1DACDA0F707B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SIP_FUNC_SALARIO" directorySegmentName="seg_0" id="1B3D4E9C-F000-1C3A-3903-C1DC3037B832">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 22:42:50 UTC</createdTime>
+<comment><![CDATA[RN22 – Todos os funcionários possuem um salário acima ou igual ao salário mínimo (Em 2020, R$ 1.045,00). 
+O maior salário atualmente é de R$ 18.000,00
+
+CK_SIP_FUNC_SALARIO
+
+CK = CHECK
+SIP = PROJETO/SISTEMA
+FUNC = TABELA
+SALARIO = CAMPO]]></comment>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<rule><![CDATA[VL_SALARIO >= 1045]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

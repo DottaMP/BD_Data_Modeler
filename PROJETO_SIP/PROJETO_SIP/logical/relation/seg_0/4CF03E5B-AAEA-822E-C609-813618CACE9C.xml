@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PARTICIPAR" directorySegmentName="seg_0" id="4CF03E5B-AAEA-822E-C609-813618CACE9C">
+<createdBy>mayar</createdBy>
+<createdTime>2021-04-28 22:41:56 UTC</createdTime>
+<ownerDesignName>PROJETO_SIP</ownerDesignName>
+<engineerTo>
+<item key="C1711F14-931E-B7DE-F084-762779377B1A" value="true"/>
+</engineerTo>
+<sourcePk>BEE63F45-4833-C277-6BA0-50B85F8CF0DB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>820B9369-E654-D3D4-4961-D3C6CAD6A26D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4F622450-CFEE-65EC-C0E6-F75A9C404D19</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

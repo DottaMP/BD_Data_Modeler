@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="89259833-06B5-BA20-E058-9E89CCC11EE0" containerWithKeyObject="067117BB-8525-13E8-E5AA-AD1664853688" localFKIndex="BD5F523E-0879-57AC-F6F5-228299FE0F2A" name="FK_SPV_NF_CLASSIF_FISCAL">
+<createdBy>mayar</createdBy>
+<createdTime>2021-05-12 23:10:50 UTC</createdTime>
+<generatorID>784929B9-7EBF-6035-E840-DCC9DEC3394C</generatorID>
+<ownerDesignName>PROJETO_SPV</ownerDesignName>
+<referredTableLongName>T_SPV_CLASSIF_FISCAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AEA8929D-CF06-2291-E895-D4130F5AE790</referredTableID>
+<keyObject>3C2EAFAD-F4ED-E8A5-3297-8A68DD06A065</keyObject>
+<referredKeyID>3C2EAFAD-F4ED-E8A5-3297-8A68DD06A065</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>nr_cfop</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
